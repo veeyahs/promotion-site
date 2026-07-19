@@ -19,17 +19,17 @@ export function TechSection() {
   const getBg = (color: string) => color === 'whale-teal' ? 'bg-whale-teal/10' : color === 'gold-accent' ? 'bg-gold-accent/10' : 'bg-sky-blue/10';
 
   return (
-    <section id="tech-inner" className="relative py-6 md:py-8">
+    <section id="tech-inner" className="relative py-12 md:py-16">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ocean-dark/30 to-transparent" />
       <div className="relative max-w-6xl mx-auto px-6">
         {/* Architecture */}
-        <div className="reveal mb-6">
-          <h3 className="font-heading text-lg font-bold text-white mb-3 text-center">技术架构</h3>
-          <div className="max-w-lg mx-auto space-y-1.5">
+        <div className="reveal mb-10">
+          <h3 className="font-heading text-xl font-bold text-white mb-5 text-center">技术架构</h3>
+          <div className="max-w-lg mx-auto space-y-2">
             {archLayers.map((layer, index) => (
               <div
                 key={index}
-                className={`reveal glass-card p-2.5 text-center border ${layer.border} transition-all duration-300 hover:scale-[1.02]`}
+                className={`reveal glass-card p-3 text-center border ${layer.border} transition-all duration-300 hover:scale-[1.02]`}
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
                 <p className="text-white font-bold text-sm">{layer.label}</p>
@@ -41,19 +41,19 @@ export function TechSection() {
 
         {/* Advantages */}
         <div>
-          <h3 className="font-heading text-lg font-bold text-white mb-3 text-center">三大核心优势</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <h3 className="font-heading text-xl font-bold text-white mb-5 text-center">三大核心优势</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {advantages.map((adv, index) => {
               const Icon = adv.icon;
               return (
-                <div key={index} className="reveal glass-card p-4 group" style={{ transitionDelay: `${index * 0.15}s` }}>
-                  <div className={`w-10 h-10 rounded-xl ${getBg(adv.color)} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
-                    <Icon className={`w-5 h-5 ${getColor(adv.color)}`} />
+                <div key={index} className="reveal glass-card p-6 group" style={{ transitionDelay: `${index * 0.15}s` }}>
+                  <div className={`w-11 h-11 rounded-xl ${getBg(adv.color)} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                    <Icon className={`w-6 h-6 ${getColor(adv.color)}`} />
                   </div>
-                  <h4 className={`font-heading text-sm font-bold ${getColor(adv.color)} mb-1.5`}>{adv.title}</h4>
-                  <p className="text-slate-400 text-xs mb-2">{adv.explain}</p>
-                  <div className="pt-2 border-t border-white/5">
-                    <p className="text-slate-300 text-xs">{adv.value}</p>
+                  <h4 className={`font-heading text-base font-bold ${getColor(adv.color)} mb-2`}>{adv.title}</h4>
+                  <p className="text-slate-400 text-sm mb-3">{adv.explain}</p>
+                  <div className="pt-3 border-t border-white/5">
+                    <p className="text-slate-300 text-sm">{adv.value}</p>
                   </div>
                 </div>
               );

@@ -19,22 +19,22 @@ const getBorderHover = (color: string) => color === 'whale-teal' ? 'hover:border
 
 export function CooperationSection() {
   return (
-    <section id="cooperation-inner" className="relative py-6 md:py-8">
+    <section id="cooperation-inner" className="relative py-12 md:py-16">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ocean-dark/30 to-transparent" />
       <div className="relative max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
           {serviceTypes.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div key={index} className={`reveal glass-card p-4 text-center group ${getBorderHover(service.color)} transition-colors`} style={{ transitionDelay: `${index * 0.15}s` }}>
-                <div className={`w-11 h-11 mx-auto mb-3 rounded-xl ${getBg(service.color)} flex items-center justify-center group-hover:scale-110 transition-transform`}>
-                  <Icon className={`w-5 h-5 ${getColor(service.color)}`} />
+              <div key={index} className={`reveal glass-card p-6 text-center group ${getBorderHover(service.color)} transition-colors`} style={{ transitionDelay: `${index * 0.15}s` }}>
+                <div className={`w-12 h-12 mx-auto mb-4 rounded-xl ${getBg(service.color)} flex items-center justify-center group-hover:scale-110 transition-transform`}>
+                  <Icon className={`w-6 h-6 ${getColor(service.color)}`} />
                 </div>
-                <h3 className={`font-heading text-base font-bold ${getColor(service.color)} mb-1.5`}>{service.title}</h3>
-                <p className="text-slate-300 text-xs mb-2">{service.desc}</p>
-                <div className="pt-2 border-t border-white/5">
+                <h3 className={`font-heading text-lg font-bold ${getColor(service.color)} mb-2`}>{service.title}</h3>
+                <p className="text-slate-300 text-sm mb-3">{service.desc}</p>
+                <div className="pt-3 border-t border-white/5">
                   <p className="text-slate-500 text-xs">适合客户</p>
-                  <p className="text-slate-400 text-xs mt-0.5">{service.target}</p>
+                  <p className="text-slate-400 text-sm mt-0.5">{service.target}</p>
                 </div>
               </div>
             );
@@ -42,16 +42,16 @@ export function CooperationSection() {
         </div>
 
         <div className="reveal">
-          <h3 className="font-heading text-lg font-bold text-white mb-3 text-center">服务保障</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 max-w-3xl mx-auto">
+          <h3 className="font-heading text-xl font-bold text-white mb-5 text-center">服务保障</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-3xl mx-auto">
             {guarantees.map((g, index) => {
               const Icon = g.icon;
               return (
-                <div key={index} className="glass-card p-3 flex items-start gap-2.5">
-                  <div className="w-8 h-8 rounded-lg bg-whale-teal/10 flex items-center justify-center flex-shrink-0">
+                <div key={index} className="glass-card p-4 flex items-start gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-whale-teal/10 flex items-center justify-center flex-shrink-0">
                     <Icon className="w-4 h-4 text-whale-teal" />
                   </div>
-                  <p className="text-slate-300 text-xs">{g.text}</p>
+                  <p className="text-slate-300 text-sm">{g.text}</p>
                 </div>
               );
             })}

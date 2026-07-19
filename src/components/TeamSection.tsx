@@ -38,35 +38,35 @@ const colorMap = {
 
 export function TeamSection() {
   return (
-    <section id="team-inner" className="relative py-6 md:py-8">
+    <section id="team-inner" className="relative py-12 md:py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {teamMembers.map((member, index) => {
             const colors = colorMap[member.color];
             const Icon = member.icon;
             return (
               <div
                 key={member.name}
-                className="reveal glass-card p-4 text-center group"
+                className="reveal glass-card p-6 text-center group"
                 style={{ transitionDelay: `${index * 0.15}s` }}
               >
-                <div className={`w-14 h-14 mx-auto mb-3 rounded-full ${colors.bg} ring-2 ${colors.ring} flex items-center justify-center`}>
-                  <Icon className={`w-7 h-7 ${colors.text}`} />
+                <div className={`w-16 h-16 mx-auto mb-4 rounded-full ${colors.bg} ring-2 ${colors.ring} flex items-center justify-center`}>
+                  <Icon className={`w-8 h-8 ${colors.text}`} />
                 </div>
-                <h3 className="font-heading text-lg font-bold text-white mb-0.5">{member.name}</h3>
-                <p className={`${colors.text} font-bold text-xs tracking-wider mb-3`}>{member.title}</p>
-                <div className="space-y-2 text-left">
+                <h3 className="font-heading text-xl font-bold text-white mb-0.5">{member.name}</h3>
+                <p className={`${colors.text} font-bold text-xs tracking-wider mb-4`}>{member.title}</p>
+                <div className="space-y-3 text-left">
                   <div>
                     <p className="text-[10px] text-slate-500 uppercase tracking-wider mb-0.5">学历背景</p>
-                    <p className="text-xs text-slate-300">{member.education}</p>
+                    <p className="text-sm text-slate-300">{member.education}</p>
                   </div>
                   <div>
                     <p className="text-[10px] text-slate-500 uppercase tracking-wider mb-0.5">核心成就</p>
-                    <p className="text-xs text-slate-300">{member.achievement}</p>
+                    <p className="text-sm text-slate-300">{member.achievement}</p>
                   </div>
                   <div>
                     <p className="text-[10px] text-slate-500 uppercase tracking-wider mb-0.5">独特价值</p>
-                    <p className={`text-xs ${colors.text} font-medium`}>{member.value}</p>
+                    <p className={`text-sm ${colors.text} font-medium`}>{member.value}</p>
                   </div>
                 </div>
               </div>
@@ -74,8 +74,8 @@ export function TeamSection() {
           })}
         </div>
 
-        <div className="reveal mt-5 glass-card p-3 md:p-4 text-center border-gold-accent/20">
-          <p className="text-sm text-white">
+        <div className="reveal mt-8 glass-card p-4 md:p-5 text-center border-gold-accent/20">
+          <p className="text-base text-white">
             <span className="text-whale-teal font-bold">金融洞察</span>
             <span className="text-slate-500 mx-2">+</span>
             <span className="text-gold-accent font-bold">工程管理</span>

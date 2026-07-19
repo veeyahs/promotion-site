@@ -10,7 +10,7 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section id="process-inner" className="relative py-6 md:py-8">
+    <section id="process-inner" className="relative py-12 md:py-16">
       <div className="max-w-6xl mx-auto px-6">
         {/* Timeline */}
         <div className="hidden lg:block relative">
@@ -18,7 +18,7 @@ export function ProcessSection() {
           <div className="grid grid-cols-7 gap-3">
             {steps.map((step, index) => (
               <div key={step.num} className="reveal text-center" style={{ transitionDelay: `${index * 0.08}s` }}>
-                <div className="relative flex justify-center mb-3">
+                <div className="relative flex justify-center mb-4">
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-mono font-bold ${
                     index < 5 ? 'bg-whale-teal/20 text-whale-teal border-2 border-whale-teal/40' :
                     index === 5 ? 'bg-gold-accent/20 text-gold-accent border-2 border-gold-accent/40' :
@@ -28,7 +28,7 @@ export function ProcessSection() {
                   </div>
                 </div>
                 <h4 className="font-heading text-xs font-bold text-white mb-1">{step.title}</h4>
-                <p className="text-slate-400 text-[11px] mb-1.5 leading-relaxed">{step.action}</p>
+                <p className="text-slate-400 text-[11px] mb-2 leading-relaxed">{step.action}</p>
                 <div className="glass-card p-2 text-left">
                   <p className="text-[10px] text-slate-500 mb-0.5">交付物</p>
                   <p className="text-[11px] text-slate-300">{step.deliverable}</p>
@@ -40,7 +40,7 @@ export function ProcessSection() {
         </div>
 
         {/* Mobile/Tablet vertical timeline */}
-        <div className="lg:hidden space-y-3">
+        <div className="lg:hidden space-y-4">
           {steps.map((step, index) => (
             <div key={step.num} className="reveal flex gap-3" style={{ transitionDelay: `${index * 0.08}s` }}>
               <div className="flex flex-col items-center">
@@ -53,12 +53,12 @@ export function ProcessSection() {
                 </div>
                 {index < steps.length - 1 && <div className="w-0.5 flex-1 bg-whale-teal/20 mt-1" />}
               </div>
-              <div className="glass-card p-3 flex-1 mb-1">
+              <div className="glass-card p-4 flex-1 mb-1">
                 <div className="flex items-center justify-between mb-1">
                   <h4 className="font-heading font-bold text-white text-sm">{step.title}</h4>
                   <span className="text-whale-teal text-xs font-mono">{step.period}</span>
                 </div>
-                <p className="text-slate-400 text-xs mb-1">{step.action}</p>
+                <p className="text-slate-400 text-sm mb-1">{step.action}</p>
                 <p className="text-slate-500 text-xs">交付：{step.deliverable}</p>
               </div>
             </div>
@@ -66,8 +66,8 @@ export function ProcessSection() {
         </div>
 
         {/* Note */}
-        <div className="reveal mt-5 text-center">
-          <div className="glass-card inline-block px-5 py-2.5 border-gold-accent/20">
+        <div className="reveal mt-8 text-center">
+          <div className="glass-card inline-block px-6 py-3 border-gold-accent/20">
             <p className="text-sm text-slate-300">
               <span className="text-gold-accent font-bold">全程专属顾问跟进</span>：每个项目配备一名业务顾问 + 一名技术负责人
             </p>
