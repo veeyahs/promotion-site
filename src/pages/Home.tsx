@@ -63,7 +63,7 @@ export default function Home() {
 
       <section id="brand">
         <div className="pt-6">
-          <SectionTitle number="第一章" title="品牌定位与核心理念" />
+          <SectionTitle title="品牌定位与核心理念" />
         </div>
         <BrandSection />
       </section>
@@ -72,7 +72,7 @@ export default function Home() {
 
       <section id="trend">
         <div className="pt-6">
-          <SectionTitle number="第二章" title="行业趋势与机遇" subtitle="为什么2026是AI智能体落地元年？" />
+          <SectionTitle title="行业趋势与机遇" subtitle="为什么2026是AI智能体落地元年？" />
         </div>
         <TrendSection />
       </section>
@@ -81,7 +81,7 @@ export default function Home() {
 
       <section id="team">
         <div className="pt-6">
-          <SectionTitle number="第三章" title="核心团队" />
+          <SectionTitle title="核心团队" />
         </div>
         <TeamSection />
       </section>
@@ -90,7 +90,7 @@ export default function Home() {
 
       <section id="tech">
         <div className="pt-6">
-          <SectionTitle number="第四章" title="技术架构与核心优势" />
+          <SectionTitle title="技术架构与核心优势" />
         </div>
         <TechSection />
       </section>
@@ -99,7 +99,7 @@ export default function Home() {
 
       <section id="process">
         <div className="pt-6">
-          <SectionTitle number="第五章" title="服务流程" subtitle="七步定制开发法" />
+          <SectionTitle title="服务流程" subtitle="七步定制开发法" />
         </div>
         <ProcessSection />
       </section>
@@ -108,7 +108,7 @@ export default function Home() {
 
       <section id="solutions">
         <div className="pt-6">
-          <SectionTitle number="第六章" title="行业解决方案" subtitle="六大行业，专属定制" />
+          <SectionTitle title="行业解决方案" subtitle="六大行业，专属定制" />
         </div>
         <SolutionSection />
       </section>
@@ -117,7 +117,7 @@ export default function Home() {
 
       <section id="roi">
         <div className="pt-6">
-          <SectionTitle number="第七章" title="客户价值与投资回报" />
+          <SectionTitle title="客户价值与投资回报" />
         </div>
         <ROISection />
       </section>
@@ -126,7 +126,7 @@ export default function Home() {
 
       <section id="cooperation">
         <div className="pt-6">
-          <SectionTitle number="第八章" title="合作模式" />
+          <SectionTitle title="合作模式" />
         </div>
         <CooperationSection />
       </section>
@@ -135,7 +135,7 @@ export default function Home() {
 
       <section id="contact">
         <div className="pt-6">
-          <SectionTitle number="第九章" title="联系我们" />
+          <SectionTitle title="联系我们" />
         </div>
         <ContactSection />
       </section>

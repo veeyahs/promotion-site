@@ -1,10 +1,6 @@
-export function SectionTitle({ number, title, subtitle }: { number: string; title: string; subtitle?: string }) {
+export function SectionTitle({ title, subtitle }: { title: string; subtitle?: string }) {
   return (
     <div className="text-center mb-5 reveal">
-      <div className="inline-flex items-center gap-3 mb-1.5">
-        <span className="font-mono text-gold-accent text-sm tracking-widest">{number}</span>
-        <span className="w-12 h-px bg-gradient-to-r from-gold-accent to-transparent" />
-      </div>
       <h2 className="font-heading text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1.5">
         {title}
       </h2>
