@@ -2,7 +2,7 @@ import { Award, Target, Lightbulb } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: '吴阳阳',
+    name: 'Serena Wu',
     title: 'CEO',
     icon: Award,
     education: '中南财经政法大学 会计学学士',
@@ -11,7 +11,7 @@ const teamMembers = [
     color: 'whale-teal' as const,
   },
   {
-    name: '朱元国',
+    name: 'July Zhu',
     title: 'COO',
     icon: Target,
     education: '华中科技大学电气工程学士，北京大学汇丰商学院EMBA硕士',
@@ -20,7 +20,7 @@ const teamMembers = [
     color: 'gold-accent' as const,
   },
   {
-    name: '甘冰春',
+    name: 'Veeyahs Gan',
     title: 'CTO',
     icon: Lightbulb,
     education: '东华理工大学 软件工程学士',

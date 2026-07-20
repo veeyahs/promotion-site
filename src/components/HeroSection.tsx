@@ -64,7 +64,7 @@ export function HeroSection() {
         </h1>
 
         <p className="font-heading text-lg md:text-xl text-whale-teal/80 tracking-[0.3em] mb-6 uppercase">
-          SHANHAI WHALE
+          ONENESS
         </p>
 
         {/* Tagline */}

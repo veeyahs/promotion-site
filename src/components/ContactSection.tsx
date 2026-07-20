@@ -51,7 +51,7 @@ export function ContactSection() {
         {/* Brand footer */}
         <div className="reveal mt-12">
           <div className="section-divider mb-6" />
-          <p className="font-heading text-xl font-bold teal-text mb-1">山海鲸 · SHANHAI WHALE</p>
+          <p className="font-heading text-xl font-bold teal-text mb-1">山海鲸 · ONENESS</p>
           <p className="text-slate-500 text-sm">让AI成为您的专属数字员工</p>
           <p className="text-slate-600 text-xs mt-3">© 2026 山海鲸. All rights reserved.</p>
         </div>

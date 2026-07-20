@@ -10,7 +10,6 @@ import { ROISection } from '@/components/ROISection';
 import { CooperationSection } from '@/components/CooperationSection';
 import { ContactSection } from '@/components/ContactSection';
 import { Navigation } from '@/components/Navigation';
-import { PDFExportButton } from '@/components/PDFExportButton';
 import { SectionTitle } from '@/components/SectionTitle';
 
 const sectionIds = ['hero', 'brand', 'trend', 'team', 'tech', 'process', 'solutions', 'roi', 'cooperation', 'contact'];
@@ -55,7 +54,6 @@ export default function Home() {
   return (
     <div className="relative">
       <Navigation activeSection={activeSection} />
-      <PDFExportButton />
 
       <HeroSection />
 
