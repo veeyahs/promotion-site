@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
 
 export function ContactSection() {
   return (
@@ -16,31 +16,53 @@ export function ContactSection() {
         </div>
 
         {/* Contact cards */}
-        <div className="reveal grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 max-w-xl mx-auto">
-          <a href="tel:1859422334" className="glass-card p-5 flex items-center gap-4 hover:border-whale-teal/40 transition-colors group">
+        <div className="reveal grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 max-w-2xl mx-auto">
+          {/* 国内手机/微信 */}
+          <a href="tel:+8613907120823" className="glass-card p-5 flex items-center gap-4 hover:border-whale-teal/40 transition-colors group">
             <div className="w-11 h-11 rounded-xl bg-whale-teal/10 flex items-center justify-center flex-shrink-0 group-hover:bg-whale-teal/20 transition-colors">
               <Phone className="w-5 h-5 text-whale-teal" />
             </div>
-            <div className="text-left">
-              <p className="text-slate-500 text-xs mb-0.5">电话</p>
-              <p className="text-white text-lg font-mono font-bold">1859422334</p>
+            <div className="text-left min-w-0">
+              <p className="text-slate-500 text-xs mb-0.5">国内（手机/微信同号）</p>
+              <p className="text-white text-lg font-mono font-bold">+86 13907120823</p>
             </div>
           </a>
-          <a href="https://weixin://dl/chat?1859422334" className="glass-card p-5 flex items-center gap-4 hover:border-gold-accent/40 transition-colors group">
+          {/* 香港手机/微信 */}
+          <a href="tel:+85265884291" className="glass-card p-5 flex items-center gap-4 hover:border-whale-teal/40 transition-colors group">
+            <div className="w-11 h-11 rounded-xl bg-whale-teal/10 flex items-center justify-center flex-shrink-0 group-hover:bg-whale-teal/20 transition-colors">
+              <Phone className="w-5 h-5 text-whale-teal" />
+            </div>
+            <div className="text-left min-w-0">
+              <p className="text-slate-500 text-xs mb-0.5">香港（手机/微信同号）</p>
+              <p className="text-white text-lg font-mono font-bold">+852 65884291</p>
+            </div>
+          </a>
+          {/* 邮箱 */}
+          <a href="mailto:wurevlon@gmail.com" className="glass-card p-5 flex items-center gap-4 hover:border-gold-accent/40 transition-colors group">
             <div className="w-11 h-11 rounded-xl bg-gold-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gold-accent/20 transition-colors">
-              <MessageCircle className="w-5 h-5 text-gold-accent" />
+              <Mail className="w-5 h-5 text-gold-accent" />
             </div>
-            <div className="text-left">
-              <p className="text-slate-500 text-xs mb-0.5">微信</p>
-              <p className="text-white text-lg font-mono font-bold">1859422334</p>
+            <div className="text-left min-w-0">
+              <p className="text-slate-500 text-xs mb-0.5">邮箱</p>
+              <p className="text-white text-base font-mono font-bold truncate">wurevlon@gmail.com</p>
             </div>
           </a>
+          {/* 地址 */}
+          <div className="glass-card p-5 flex items-center gap-4">
+            <div className="w-11 h-11 rounded-xl bg-sky-blue/10 flex items-center justify-center flex-shrink-0">
+              <MapPin className="w-5 h-5 text-sky-blue" />
+            </div>
+            <div className="text-left min-w-0">
+              <p className="text-slate-500 text-xs mb-0.5">地址</p>
+              <p className="text-white text-sm font-medium leading-snug">深圳市宝安区新安街道海滨社区N23区熙龙湾商务国际大厦2607</p>
+            </div>
+          </div>
         </div>
 
         {/* CTA Button */}
         <div className="reveal">
           <a
-            href="tel:1859422334"
+            href="tel:+8613907120823"
             className="inline-flex items-center gap-3 px-8 py-3 bg-whale-teal text-ocean-deep font-bold rounded-full hover:bg-whale-teal-light transition-all duration-300 hover:scale-105 shadow-lg shadow-whale-teal/30 text-base group"
           >
             立即咨询
@@ -53,7 +75,7 @@ export function ContactSection() {
           <div className="section-divider mb-6" />
           <p className="font-heading text-xl font-bold teal-text mb-1">山海鲸 · ONENESS</p>
           <p className="text-slate-500 text-sm">让AI成为您的专属数字员工</p>
-          <p className="text-slate-600 text-xs mt-3">© 2026 山海鲸. All rights reserved.</p>
+          <p className="text-slate-600 text-xs mt-3">© 2026 深圳市山海鲸控股有限公司. All rights reserved.</p>
         </div>
       </div>
     </section>

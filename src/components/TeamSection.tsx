@@ -1,10 +1,10 @@
-import { Award, Target, Lightbulb } from 'lucide-react';
+import { User, UserCheck, UserCog, Bot } from 'lucide-react';
 
 const teamMembers = [
   {
     name: 'Serena Wu',
     title: 'CEO',
-    icon: Award,
+    icon: User,
     education: '中南财经政法大学 会计学学士',
     achievement: '累计主管融资规模逾20亿元，服务对象覆盖高净值个人、企业客户、政府平台及金融机构',
     value: '深度理解客户的决策逻辑、财富焦虑与传承需求，确保AI智能体方案真正解决商业痛点',
@@ -13,7 +13,7 @@ const teamMembers = [
   {
     name: 'July Zhu',
     title: 'COO',
-    icon: Target,
+    icon: UserCheck,
     education: '华中科技大学电气工程学士，北京大学汇丰商学院EMBA硕士',
     achievement: '国家认证项目经理，高级能源管理师，持有6项专利（含1项发明专利）',
     value: '确保每个项目按时、按质、按预算交付',
@@ -22,11 +22,20 @@ const teamMembers = [
   {
     name: 'Veeyahs Gan',
     title: 'CTO',
-    icon: Lightbulb,
+    icon: UserCog,
     education: '东华理工大学 软件工程学士',
     achievement: '十余年头部互联网研发与团队管理经验，资深软件工程师、认证敏捷教练',
     value: '将前沿AI技术转化为可落地的商业解决方案',
     color: 'sky-blue' as const,
+  },
+  {
+    name: 'Fred Zhang',
+    title: 'AI Agent 架构师',
+    icon: Bot,
+    education: '广州大学 智能科学与技术学士',
+    achievement: '国内 Agent 工程化先驱，主导过多个千万级用户智能体系统的架构设计与落地，精通 Multi-Agent 协同、动态工具链调度、长上下文推理等核心技术',
+    value: '具备从底层引擎到上层应用的完整自研能力，拥有从 0 到 1 构建自主智能体平台的完整工程经验',
+    color: 'coral-red' as const,
   },
 ];
 
@@ -34,13 +43,14 @@ const colorMap = {
   'whale-teal': { bg: 'bg-whale-teal/10', text: 'text-whale-teal', ring: 'ring-whale-teal/20' },
   'gold-accent': { bg: 'bg-gold-accent/10', text: 'text-gold-accent', ring: 'ring-gold-accent/20' },
   'sky-blue': { bg: 'bg-sky-blue/10', text: 'text-sky-blue', ring: 'ring-sky-blue/20' },
+  'coral-red': { bg: 'bg-coral-red/10', text: 'text-coral-red', ring: 'ring-coral-red/20' },
 };
 
 export function TeamSection() {
   return (
     <section id="team-inner" className="relative py-12 md:py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {teamMembers.map((member, index) => {
             const colors = colorMap[member.color];
             const Icon = member.icon;
@@ -81,6 +91,8 @@ export function TeamSection() {
             <span className="text-gold-accent font-bold">工程管理</span>
             <span className="text-slate-500 mx-2">+</span>
             <span className="text-sky-blue font-bold">技术落地</span>
+            <span className="text-slate-500 mx-2">+</span>
+            <span className="text-coral-red font-bold">Agent 架构</span>
             <span className="text-slate-500 mx-2">=</span>
             <span className="gold-text font-bold">真正懂业务的AI智能体服务商</span>
           </p>
